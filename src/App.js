@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Form from './pages/Form';
+import UsersTable from './pages/UserTable';
+import CompaniesTable from './pages/Company';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form />
+      <h1 className="text-2xl mb-4">Users Table</h1>
+      <UsersTable />
+      <h1 className="text-2xl my-4">Companies Table</h1>
+      <CompaniesTable />
     </div>
   );
 }
